@@ -1,0 +1,47 @@
+/* styles.css */
+
+/* Default background color */
+
+/* Ensure the page takes full height */
+html, body {
+    height: 100%;  /* Full height */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    margin: 0; /* Remove default margin */
+  } 
+
+/* Main content will expand and push the footer down */
+.content {
+    flex: 1; /* Takes up available space */
+  }
+body {
+    background-color: #f8f9fa; /* Light gray */
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+/* Footer styles */
+footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+  }
+
+.city-container{
+    margin-top: 100px;
+}
+/* Air Quality Status */
+.status-badge {
+    font-size: 35px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.custom-container {
+    height: 500px;
+    margin: 20px;
+}
+
+/* Dynamic Background Colors */
+.bg-good { background-color: #8BC34A !important; }      /* Green */
+.bg-moderate { background-color: #FFEB3B !important; }  /* Yellow */
+.bg-sensitive { background-color: #FF9800 !important; } /* Orange */
+.bg-unhealthy { background-color: #F44336 !important; } /* Red */
+.bg-very-unhealthy { background-color: #9C27B0 !important; } /* Purple */
+.bg-hazardous { background-color: #673AB7 !important; } /* Dark Purple */

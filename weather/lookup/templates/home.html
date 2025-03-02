@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container text-center city-container">
+    <h1>Check Air Quality</h1>
+    <p>Select a city to check the air quality:</p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="{% url 'city_air_quality' city='yangon' %}" class="btn btn-primary">Yangon</a>
+      <a href="{% url 'city_air_quality' city='bangkok' %}" class="btn btn-success">Bangkok</a>
+      <a href="{% url 'city_air_quality' city='singapore' %}" class="btn btn-danger">Singapore</a>
+    </div>
+  </div>
+  
+<br/>
+
+{% endblock %}

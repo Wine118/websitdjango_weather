@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body_class %}
+    {{ bg_class }}
+{% endblock %}
+
+{% block content %}
+<div class="container result">
+    {% if error %}
+        <h1>Error</h1>
+        <p>{{ error }}</p>
+    {% else %}
+        <h1>Air Quality in {{ city }}</h1>
+        <p>AQI Level: <strong>{{ aqi }}</strong></p>
+        <p>Status: <span class="badge bg-info">{{ status }}</span></p>
+    {% endif %}
+</div>
+{% endblock %}
+
+
